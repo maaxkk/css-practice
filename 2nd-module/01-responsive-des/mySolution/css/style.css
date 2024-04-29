@@ -1,0 +1,56 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 90%;
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /*border: 2px solid magenta;*/
+    padding: 1rem;
+    color: #707070;
+}
+
+header {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.title-span {
+    color: #B7832F;
+}
+
+.text1, .text2, .text3, .sidetext {
+    /*border: 2px solid magenta;*/
+}
+
+.text1 {
+    width: 20%;
+}
+
+.text2 {
+    width: 45%;
+}
+
+.text3 {
+    width: 70%;
+}
+
+.sidetext {
+    width: 20%;
+    background: #212615;
+    padding: 1em;
+    color: white;
+}

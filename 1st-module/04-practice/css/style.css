@@ -1,0 +1,96 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 620px;
+    margin: 0 auto;
+    border: 2px solid magenta;
+}
+
+section, header {
+    padding: 45px 0;
+}
+
+header {
+    background: #2E354F;
+    color: #fff;
+}
+
+h1, h2, strong {
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #EF5839;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    font-size: 1.5rem;
+}
+
+.link-orange {
+    color: #EF5839;
+}
+
+.link-orange:hover, .link-orange:focus {
+    color: #d4b44c;
+}
+
+.section-one {
+    color: #2E354F;
+    font-size: 2rem;
+}
+
+.section-two {
+    background: #2E354F;
+}
+
+.section-two-text {
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.orange-btn {
+    background: #ef5839;
+    color: #fff;
+}
+
+.orange-btn:hover {
+    color: #2e354f;
+    background: #d4b44c;
+}
+
+.white-btn {
+    color: #2E354F;
+    background: #fff;
+}
+
+.white-btn:hover {
+    color: #2e354f;
+    background-color: #999;
+}
