@@ -2,7 +2,8 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    color: #707070
+    font-size: 1.125rem;
+    color: #707070;
 }
 
 header {
@@ -32,6 +33,17 @@ img {
     display: block;
 }
 
+footer {
+    background: #143774;
+    text-align: center;
+    padding: 3em 0;
+    color: white;
+}
+
+strong {
+    font-weight: 700;
+}
+
 .subtitle {
     margin: 0;
     color: #1792D2;
@@ -40,7 +52,6 @@ img {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-
 
 /* Layout */
 
@@ -67,6 +78,8 @@ img {
 
     .sidebar {
         width: 25%;
+        min-width: 200px;
+        margin-left: 1em;
     }
 }
 
@@ -120,9 +133,6 @@ main {
     margin: 2em 0;
 }
 
-
-
-
 /* Left section */
 
 .main-card {
@@ -136,6 +146,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 2em;
 }
 
 .main-article-info {
@@ -148,19 +159,26 @@ main {
 
 @media (min-width: 675px) {
     .main-card-image {
-        order: -2
+        order: -2;
     }
     .data {
         order: -1;
+    }
+    .article-image {
+        min-height: 250px;
+        object-fit: cover;
+    }
+    .plant {
+        object-position: left;
     }
     .article-card {
         flex-direction: row;
     }
     .main-article-info {
-        width: 70%;
+        width: 65%;
     }
     .secondary-article-info {
-        width: 25%;
+        width: 30%;
     }
 
 }
@@ -178,9 +196,9 @@ h2 {
     color: #1792D2;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.85rem;
 }
 
 .continue-read:hover,
@@ -193,16 +211,12 @@ h2 {
     color: #1792D2;
 }
 
-
-
-
 /* Right section */
 .small-card {
     border: 1em solid rgba(0, 0, 0, 0.1);
     padding: 1em;
     margin-bottom: 2em;
 }
-
 
 .recent-post {
     border-bottom: 1px solid #707070;
@@ -212,7 +226,26 @@ h2 {
 }
 
 .recent-image {
+    height: 150px;
+    object-fit: cover;
     order: -1
+}
+
+.chair {
+    object-position: bottom;
+}
+
+@media (min-width: 675px) {
+    .recent-image {
+        height: inherit;
+    }
+}
+
+.image-about-me {
+    max-height: 300px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 .recent-post:last-child {
@@ -232,4 +265,20 @@ h2 {
     color: #143774;
     font-size: 1rem;
     font-weight: 400;
+}
+
+
+/* about me */
+
+.about-me-title {
+    margin-top: 2em;
+}
+
+.about-me-subtitle {
+    color: #1792D2;
+    font-weight: 400;
+}
+
+.about-me-text {
+    color: black;
 }
